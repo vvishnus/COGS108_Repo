@@ -60,11 +60,17 @@ void setup() {
   myservo.attach(9);
 }
 
+
 void loop() {
+  //First sweep from 0 step to final Position
   for (pos = 0; pos <= 180; pos += 1) {
     myservo.write(pos);
+    
+    //Every step takes place after 15ms
     delay(15);
   }
+  
+  // Then back to 0
   for (pos = 180; pos >= 0; pos -= 1) {
     myservo.write(pos);
     delay(15);
