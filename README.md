@@ -78,7 +78,7 @@ void loop() {
 }
 ```
 
-## Line-by-Line Explanation
+## Explanation
 
 1. `#include <Servo.h>`: Includes the Servo library.
 
@@ -89,23 +89,5 @@ void loop() {
 4. Inside the `setup()` function:
     - `myservo.attach(9);`: Attaches the servo object to digital pin 9 on the Arduino board.
 
-5. Inside the `loop()` function:
-    - The first `for` loop increases the position from 0 to 180 degrees in steps of 1 degree.
-        ```cpp
-        for (pos = 0; pos <= 180; pos += 1) {
-            myservo.write(pos);
-            delay(15);
-        }
-        ```
-    - The second `for` loop decreases the position from 180 back to 0 degrees
-    - also in steps of 1 degree.
-        ```cpp
-        for (pos = 180; pos >= 0; pos -= 1) {
-            myservo.write(pos);
-            delay(15);
-        }
-        ```
-
-6. `delay(15);`: Makes the Arduino wait for 15 milliseconds to give the servo motor time to reach the specified position. 
-
+6. `delay(15);`: Makes the Arduino wait for 15 milliseconds after each step to give enough time
 ---
