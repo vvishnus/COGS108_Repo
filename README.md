@@ -33,7 +33,8 @@ void loop() {
 - `Servo myservo;`: Servo object creation.
 - `myservo.attach(9);`: Servo object attached to pin 9.
 - `myservo.write(0);`, `myservo.write(90);`, `myservo.write(180);`
-   : Commands to control the servo's speed and direction. Exact values and behavior may vary between servo models.
+   : Commands to control the servo's speed and direction. 
+   Exact values and behavior may vary between servo models.
 - `delay(2000);`: 2 second pause to allow the servo to perform the action.
 
 ---
